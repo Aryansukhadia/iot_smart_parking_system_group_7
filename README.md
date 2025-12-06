@@ -2,7 +2,7 @@
 
 A comprehensive IoT-based smart parking management system with real-time slot monitoring, automated gate control, booking system, and advanced analytics.
 
-## 🚀 Features
+## Features
 
 ### Core Features
 - **Real-time Slot Monitoring**: Live occupancy detection using IR sensors
@@ -23,7 +23,7 @@ A comprehensive IoT-based smart parking management system with real-time slot mo
 - **Export Functionality**: CSV export of booking data with date filtering
 - **Statistics Cards**: Real-time metrics on dashboard
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────┐
@@ -57,7 +57,7 @@ A comprehensive IoT-based smart parking management system with real-time slot mo
          └→ LEDs (Status indicators)
 ```
 
-## 📋 Hardware Components
+## Hardware Components
 
 ### Arduino Mega 2560
 - **Sensors**:
@@ -73,7 +73,7 @@ A comprehensive IoT-based smart parking management system with real-time slot mo
 - Polls backend every 1 second for gate commands
 - Sends sensor data every 2 seconds
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -122,7 +122,7 @@ Connect NodeMCU TX → Mega RX1 (Pin 19)
 Connect NodeMCU RX → Mega TX1 (Pin 18)
 Connect GND of both boards together
 
-## 📱 Usage
+##  Usage
 
 ### Default Login Credentials
 
@@ -153,7 +153,7 @@ Connect GND of both boards together
 - **Timer-based**: Mega firmware maintains 10-second open duration
 - **Status Polling**: NodeMCU checks gate status every 1 second
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 smart-parking/
@@ -182,7 +182,7 @@ smart-parking/
 └── README.md                # This file
 ```
 
-## 🔧 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /api/auth` - User login
@@ -219,7 +219,7 @@ smart-parking/
 ### Payments
 - `POST /api/payments/pay` - Process payment
 
-## 💡 Key Improvements
+##  Key Improvements
 
 ### Gate Control System
 - **Timer-based Auto-close**: Both backend and firmware implement 10-second timers
@@ -234,7 +234,7 @@ smart-parking/
 - Vehicle number tracking in all operations
 - Periodic status polling logs (10% sampling to reduce spam)
 
-## 🎨 UI/UX Features
+##  UI/UX Features
 
 - **Purple Gradient Theme**: Modern gradient (#667eea → #764ba2)
 - **Glassmorphism Effects**: Translucent cards with backdrop blur
@@ -245,7 +245,7 @@ smart-parking/
 - **Cost Estimator**: Live pricing calculation in booking modal
 - **Search & Filter**: Quick access to booking records
 
-## 🔐 Security Features
+##  Security Features
 
 - Password-based authentication
 - Role-based access control (Admin/Consumer)
@@ -253,7 +253,7 @@ smart-parking/
 - Auto-cancellation of expired bookings
 - System health monitoring
 
-## 📊 Database Schema
+##  Database Schema
 
 ### Tables
 - **users**: User accounts and authentication
@@ -262,7 +262,7 @@ smart-parking/
 - **payments**: Transaction history
 - **system_logs**: Activity logging
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Gate Not Opening/Closing
 1. Check backend console for gate status logs
@@ -280,14 +280,14 @@ smart-parking/
 2. Check serial output from Mega for sensor readings
 3. Review `sendStatusToNodeMCU()` function output
 
-## 📝 License
+##  License
 
 This project is open source and available for educational purposes.
 
-## 👨‍💻 Author
+##  Author
 
 Jayraj Derasari
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-Built with modern IoT practices and industry-standard features for smart parking management.
+Professor Anurag Lakhlani have helped us and guided when ever we faced any problem or issue.
