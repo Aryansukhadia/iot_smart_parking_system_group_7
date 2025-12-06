@@ -284,9 +284,6 @@ smart-parking/
 
 This project is open source and available for educational purposes.
 
-##  Author
-
-Jayraj Derasari
 
 ## Acknowledgments
 
